@@ -1,0 +1,16 @@
+<h3>
+  Blog Comments:
+</h3>
+ 
+<div class="Container" style="background-color: white;">
+<div class="col-lg-12" style="background-color:white;">
+  <div *ngFor = "let b of blogcomment">
+
+  <p>Name:{{b.name}} </p>
+  <a routerLink = "{{b.id}}"> <p><b>Email: {{b.email}}</b> </p></a>
+    <p>Body: {{b.body}} </p>
+<p class="pull-left"><i class="fa fa-comment"> </i> Idis:{{b.id}}</p>
+<p class="pull-right"><i class="fa fa-envelope"></i> {{b.postId}} </p><br><br>
+</div>
+</div>
+</div>

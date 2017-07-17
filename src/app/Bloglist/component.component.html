@@ -1,0 +1,12 @@
+ 
+ <div class="Container" style="background-color: white;">
+    <div class="col-lg-12" style="background-color:white;">
+<div class="col-lg-4" id="color" *ngFor="let b of bloglist">
+<p class="pull-left">Id is:{{b.id}} </p>
+<p class="pull-right">Posted: {{b.userId}} </p><br>
+<a routerLink="{{b.id}}"> <p><b>Title: {{b.title}}</b> </p></a>
+<p>Body: {{b.body}} </p>
+</div>
+</div>
+</div>
+

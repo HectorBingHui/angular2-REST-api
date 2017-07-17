@@ -12,7 +12,6 @@ import {ApiServiceService} from './api-service.service';
 import { BlogDetailCommentComponent } from './blog-detail-comment/blog-detail-comment.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselModule } from 'angular4-carousel';
-import {BusyModule, BusyConfig} from 'angular2-busy';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
@@ -29,15 +28,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     OwlModule,
     HttpModule,
     CarouselModule,
-     BusyModule.forRoot(
-       new BusyConfig({
-         message: 'Don\'t panic!',
-                backdrop: false,
-                template: '<div>{{message}}</div>',
-                delay: 200,
-                minDuration: 600,
-                wrapperClass: 'my-class'
-            })),
     BrowserAnimationsModule,
     RouterModule.forRoot([
       {
